@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Témoignages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="iut_auxerre.jpg" alt="Logo BUT RT" width="40" height="40" class="d-inline-block align-text-top">
+                    BUT RT
+                </a>
+
+                <!-- Burger Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="ecoles.html">Écoles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="formations.html">Formations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="temoignages.html">Témoignages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <!-- Dynamic Toggle Button for Light/Dark Mode -->
+                        <li class="nav-item">
+                            <button id="theme-toggle" class="btn btn-outline-light">🌙 Mode sombre</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <section id="temoignages" class="mt-5">
+            <h2 class="text-center mb-4">Témoignages</h2>
+            <div class="carousel slide" id="testimonialCarousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-4">"Grâce au BUT RT, j'ai intégré une grande école d'ingénieurs et je travaille maintenant chez un opérateur télécom."</p>
+                            <footer class="blockquote-footer">Amina</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-4">"Les certifications comme AWS et Cisco m'ont permis de décrocher un poste de consultant cloud en moins d'un an."</p>
+                            <footer class="blockquote-footer">Karim</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Réseaux et Télécommunications. SAMB-SECK.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
