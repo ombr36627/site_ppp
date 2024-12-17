@@ -3,50 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Témoignages</title>
+    <title>Formations - Licences professionnelles</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Animation fade for the carousel */
-        .carousel-item {
-            opacity: 0;
-            transition: opacity 0.8s ease-in-out;
-        }
-        .carousel-item.active {
-            opacity: 1;
-        }
-
-        /* Fade-in animation for the section */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.6s ease-out;
-        }
-
-        .fade-in.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container">
+                <!-- Logo -->
                 <a class="navbar-brand" href="index.html">
                     <img src="iut_auxerre.jpg" alt="Logo BUT RT" width="40" height="40" class="d-inline-block align-text-top">
                     BUT RT
                 </a>
+
+                <!-- Burger Button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- Navigation Links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="ecoles.html">Écoles</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="formations.html">Formations</a></li>
-                        <li class="nav-item"><a class="nav-link" href="temoignages.html">Témoignages</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ecoles.html">Écoles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="formations.html">Formations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="temoignages.html">Témoignages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <!-- Dynamic Toggle Button for Light/Dark Mode -->
                         <li class="nav-item">
                             <button id="theme-toggle" class="btn btn-outline-light">🌙 Mode sombre</button>
                         </li>
@@ -56,40 +47,117 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
+
     <main class="container mt-5">
-        <section id="temoignages" class="mt-5 fade-in">
-            <h2 class="text-center mb-4">Témoignages</h2>
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" aria-label="Témoignages d'étudiants">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <blockquote class="blockquote text-center">
-                            <p class="mb-4">"Grâce au BUT RT, j'ai intégré une grande école d'ingénieurs et je travaille maintenant chez un opérateur télécom."</p>
-                            <footer class="blockquote-footer">Amina</footer>
-                        </blockquote>
-                    </div>
-                    <div class="carousel-item">
-                        <blockquote class="blockquote text-center">
-                            <p class="mb-4">"Les certifications comme AWS et Cisco m'ont permis de décrocher un poste de consultant cloud en moins d'un an."</p>
-                            <footer class="blockquote-footer">Karim</footer>
-                        </blockquote>
-                    </div>
-                    <div class="carousel-item">
-                        <blockquote class="blockquote text-center">
-                            <p class="mb-4">"Une formation pratique et complète qui m'a ouvert les portes de la cybersécurité."</p>
-                            <footer class="blockquote-footer">Fatou</footer>
-                        </blockquote>
+        <section id="formations" class="mt-5">
+            <h2 class="text-center mb-4">Licences Professionnelles après un BUT 2 RT</h2>
+            <p class="text-center mb-5">
+                Après un BUT Réseaux et Télécommunications, les licences professionnelles offrent une spécialisation rapide et permettent une insertion professionnelle réussie dans des domaines très demandés. Voici une sélection des principales licences accessibles.
+            </p>
+            <div class="row">
+                <!-- Licence Pro Réseaux et Télécommunications -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="onisep.jpg" class="card-img-top mx-auto mt-3" alt="Réseaux et Télécommunications" style="max-width: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Licence Pro Réseaux et Télécommunications</h5>
+                            <p class="card-text">Cette licence forme des experts en conception, administration et sécurisation de réseaux d'entreprises.</p>
+                            <ul class="list-unstyled text-start">
+                                <li>✅ Gestion des réseaux LAN, WAN et Wi-Fi.</li>
+                                <li>✅ Sécurisation des infrastructures réseau.</li>
+                            </ul>
+                            <a href="https://www.onisep.fr/recherche?text=+Licence+pro+mention+m%C3%A9tiers+de+l%27informatique+%3A+administration+et+s%C3%A9curit%C3%A9+des+syst%C3%A8mes+et+des+r%C3%A9seaux&context=onisep" 
+                               class="btn btn-outline-primary mt-3" target="_blank">En savoir plus</a>
+                        </div>
                     </div>
                 </div>
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Précédent</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Suivant</span>
-                </button>
+
+                <!-- Licence Pro Cybersécurité -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="univ-amu.jpg" class="card-img-top mx-auto mt-3" alt="Cybersécurité" style="max-width: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Licence Pro Cybersécurité</h5>
+                            <p class="card-text">Destinée aux futurs professionnels de la sécurité des systèmes d'information et des réseaux.</p>
+                            <ul class="list-unstyled text-start">
+                                <li>✅ Protection contre les cyberattaques.</li>
+                                <li>✅ Expertise en gestion des incidents et cryptographie.</li>
+                            </ul>
+                            <a href="https://formations.univ-amu.fr/MEPWAS.html" 
+                               class="btn btn-outline-primary mt-3" target="_blank">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Licence Pro Domotique et IoT -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="www.iut.pngg" class="card-img-top mx-auto mt-3" alt="Domotique et IoT" style="max-width: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Licence Pro Domotique et IoT</h5>
+                            <p class="card-text">Spécialisation dans les systèmes connectés pour la maison intelligente et l'IoT industriel.</p>
+                            <ul class="list-unstyled text-start">
+                                <li>✅ Conception de systèmes domotiques et IoT.</li>
+                                <li>✅ Intégration et gestion des objets connectés.</li>
+                            </ul>
+                            <a href="https://www.iut.fr/formations/licence-pro-domotique-et-iot" 
+                               class="btn btn-outline-primary mt-3" target="_blank">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <!-- Licence Pro Cloud Computing -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="univ-nantes.jpg" class="card-img-top mx-auto mt-3" alt="Cloud Computing" style="max-width: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Licence Pro Cloud Computing</h5>
+                            <p class="card-text">Forme des spécialistes en architecture et gestion de solutions cloud.</p>
+                            <ul class="list-unstyled text-start">
+                                <li>✅ Déploiement et optimisation des infrastructures cloud.</li>
+                                <li>✅ Gestion de services virtualisés et DevOps.</li>
+                            </ul>
+                            <a href="https://www.univ-nantes.fr/cloud-computing" 
+                               class="btn btn-outline-primary mt-3" target="_blank">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Licence Pro Systèmes Embarqués -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="univ-rennes1.jpg" class="card-img-top mx-auto mt-3" alt="Systèmes Embarqués" style="max-width: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Licence Pro Systèmes Embarqués</h5>
+                            <p class="card-text">Pour ceux qui souhaitent se spécialiser dans le développement de solutions embarquées.</p>
+                            <ul class="list-unstyled text-start">
+                                <li>✅ Programmation en temps réel.</li>
+                                <li>✅ Conception matérielle et logicielle.</li>
+                            </ul>
+                            <a href="https://www.univ-rennes1.fr/licence-pro-systemes-embarques" 
+                               class="btn btn-outline-primary mt-3" target="_blank">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Licence Pro Informatique et Big Data -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="iut-paysdelaloire.png" class="card-img-top mx-auto mt-3" alt="Informatique et Big Data" style="max-width: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Licence Pro Informatique et Big Data</h5>
+                            <p class="card-text">Pour devenir un expert en gestion et exploitation des données massives.</p>
+                            <ul class="list-unstyled text-start">
+                                <li>✅ Analyse et traitement des big data.</li>
+                                <li>✅ Compétences en data science et IA.</li>
+                            </ul>
+                            <a href="https://www.iut-paysdelaloire.fr/big-data" 
+                               class="btn btn-outline-primary mt-3" target="_blank">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -97,33 +165,11 @@
     <!-- Footer Section -->
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
-            <p>&copy; 2024 Réseaux et Télécommunications. Tous droits réservés.</p>
+            <p>&copy; 2024 Réseaux et Télécommunications. SAMB-SECK.</p>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script>
-        // Fade-in Effect on Scroll
-        document.addEventListener('DOMContentLoaded', () => {
-            const fadeElements = document.querySelectorAll('.fade-in');
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('show');
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            fadeElements.forEach(element => observer.observe(element));
-        });
-
-        // Theme Toggle
-        const themeToggle = document.querySelector('#theme-toggle');
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️ Mode clair' : '🌙 Mode sombre';
-        });
-    </script>
+    <script src="scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
